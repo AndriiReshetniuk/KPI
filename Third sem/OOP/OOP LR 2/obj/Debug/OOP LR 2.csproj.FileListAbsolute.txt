@@ -1,0 +1,8 @@
+D:\OOP LR 2\obj\Debug\OOP LR 2.csproj.AssemblyReference.cache
+D:\OOP LR 2\obj\Debug\OOP LR 2.csproj.SuggestedBindingRedirects.cache
+D:\OOP LR 2\obj\Debug\OOP LR 2.csproj.CoreCompileInputs.cache
+D:\OOP LR 2\bin\Debug\OOP LR 2.exe.config
+D:\OOP LR 2\bin\Debug\OOP LR 2.exe
+D:\OOP LR 2\bin\Debug\OOP LR 2.pdb
+D:\OOP LR 2\obj\Debug\OOP LR 2.exe
+D:\OOP LR 2\obj\Debug\OOP LR 2.pdb
