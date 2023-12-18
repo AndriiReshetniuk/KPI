@@ -1,0 +1,8 @@
+D:\ООП ЛР №3 справжня\obj\Debug\ООП ЛР №3 справжня.csproj.AssemblyReference.cache
+D:\ООП ЛР №3 справжня\obj\Debug\ООП ЛР №3 справжня.csproj.SuggestedBindingRedirects.cache
+D:\ООП ЛР №3 справжня\obj\Debug\ООП ЛР №3 справжня.csproj.CoreCompileInputs.cache
+D:\ООП ЛР №3 справжня\bin\Debug\ООП ЛР №3 справжня.exe.config
+D:\ООП ЛР №3 справжня\bin\Debug\ООП ЛР №3 справжня.exe
+D:\ООП ЛР №3 справжня\bin\Debug\ООП ЛР №3 справжня.pdb
+D:\ООП ЛР №3 справжня\obj\Debug\ООП ЛР №3 справжня.exe
+D:\ООП ЛР №3 справжня\obj\Debug\ООП ЛР №3 справжня.pdb
