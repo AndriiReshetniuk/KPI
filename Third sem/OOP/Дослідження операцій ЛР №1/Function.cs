@@ -27,29 +27,29 @@ namespace Дослідження_операцій_ЛР__1
             }
             return y;
         }
-        public void printFunction()
+        public string printFunction()
         {
-            Console.WriteLine("Початковий вигляд функцiї:\n");
+            string view_Of_Function = "";
             for(int i = 0; i<x_in_function.Length; i++)
             {
                     if (i != 0)
                     {
                         if (x_in_function[i].coeficient_Of_X > 0)
                         {
-                            Console.Write(" + ");
+                            view_Of_Function += " + ";
                         }
                         else if (x_in_function[i].coeficient_Of_X < 0)
                         {
-                            Console.Write(" - ");
+                            view_Of_Function += " - ";
                         }
                     }
                     else if(i == 0 && x_in_function[i].coeficient_Of_X < 0)
                     {
-                        Console.Write("-");
+                        view_Of_Function+= "-";
                     }
-                x_in_function[i].printXwithoutSign();
+                view_Of_Function += x_in_function[i].printXwithoutSign();
             }
-            Console.Write('\n');
+            return view_Of_Function;
         }
     }
 }

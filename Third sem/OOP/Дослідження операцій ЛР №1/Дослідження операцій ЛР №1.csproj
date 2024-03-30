@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChartGraphic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChartGraphic.Designer.cs">
+      <DependentUpon>ChartGraphic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TableFieldsStorage.cs" />
+    <Compile Include="Table_of_iteration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table_of_iteration.Designer.cs">
+      <DependentUpon>Table_of_iteration.cs</DependentUpon>
+    </Compile>
     <Compile Include="X.cs" />
     <Compile Include="Function.cs" />
     <Compile Include="Interval.cs" />
@@ -51,6 +72,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChartGraphic.resx">
+      <DependentUpon>ChartGraphic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table_of_iteration.resx">
+      <DependentUpon>Table_of_iteration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

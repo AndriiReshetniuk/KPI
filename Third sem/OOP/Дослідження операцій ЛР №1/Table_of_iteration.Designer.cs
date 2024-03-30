@@ -28,35 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Table1 = new System.Windows.Forms.DataGridView();
+            this.buttonCreateGraphic = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Table1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // Table1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(287, 74);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(354, 184);
-            this.dataGridView1.TabIndex = 0;
+            this.Table1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Table1.Location = new System.Drawing.Point(173, 16);
+            this.Table1.Name = "Table1";
+            this.Table1.RowHeadersWidth = 51;
+            this.Table1.RowTemplate.Height = 24;
+            this.Table1.Size = new System.Drawing.Size(1059, 403);
+            this.Table1.TabIndex = 0;
+            // 
+            // buttonCreateGraphic
+            // 
+            this.buttonCreateGraphic.BackColor = System.Drawing.Color.LimeGreen;
+            this.buttonCreateGraphic.Location = new System.Drawing.Point(649, 446);
+            this.buttonCreateGraphic.Name = "buttonCreateGraphic";
+            this.buttonCreateGraphic.Size = new System.Drawing.Size(158, 40);
+            this.buttonCreateGraphic.TabIndex = 1;
+            this.buttonCreateGraphic.Text = "Створити Графік";
+            this.buttonCreateGraphic.UseVisualStyleBackColor = false;
+            this.buttonCreateGraphic.Click += new System.EventHandler(this.button1_Click);
             // 
             // Table_of_iteration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1365, 507);
+            this.Controls.Add(this.buttonCreateGraphic);
+            this.Controls.Add(this.Table1);
             this.Name = "Table_of_iteration";
             this.Text = "Table_of_iteration";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Table_of_iteration_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Table1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Table1;
+        private System.Windows.Forms.Button buttonCreateGraphic;
     }
 }

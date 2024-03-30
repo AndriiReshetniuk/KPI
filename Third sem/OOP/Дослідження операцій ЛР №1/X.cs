@@ -23,34 +23,36 @@ namespace Дослідження_операцій_ЛР__1
             double calculatedPower = Math.Pow(value_Of_X, power_of_x) * coeficient_Of_X;
             return Math.Pow(valueToRaise, calculatedPower);
         }
-        public void printXwithoutSign()
+        public string printXwithoutSign()
         {
+            string viewOfX = "";
             if (coeficient_Of_X != 0)
             {
                 double coeficient_of_x_without_sign = Math.Abs(coeficient_Of_X);
                 if (coeficient_Of_X != 1)
                 {
-                    Console.Write(coeficient_of_x_without_sign);
+                    viewOfX += coeficient_of_x_without_sign;
                     if (coefficient_power != null)
                     {
-                        Console.Write($"^(");
+                        viewOfX += "^(";
                         if(coefficient_power.coeficient_Of_X < 0)
                         {
-                            Console.Write("-");
+                            viewOfX += "-";
                         }
-                        coefficient_power.printXwithoutSign();
-                        Console.Write(") ");
+                        viewOfX += coefficient_power.printXwithoutSign();
+                        viewOfX += ") ";
                     }
                 }
                 if (power_of_x != 0)
                 {
-                    Console.Write("x");
+                    viewOfX += "x";
                     if (power_of_x != 1)
                     {
-                        Console.Write($"^{power_of_x}");
+                        viewOfX += "^"+power_of_x;
                     }
                 }
             }
+            return viewOfX;
         }
     }
 }
