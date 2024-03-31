@@ -36,6 +36,16 @@ namespace Дослідження_операцій_ЛР__1
             choosenNumbers.End_of_the_interval = Convert.ToDouble(Console.ReadLine());
             return choosenNumbers;
         }
+        public static int DefineCountOFNumbersAfterComa(double value)
+        {
+            int countOfNumbersAfterComa = 0;
+            while(value != Math.Floor(value))
+            {
+                value *= 10;
+                countOfNumbersAfterComa++;
+            }
+            return countOfNumbersAfterComa;
+        }
         public static double LimitAccuracy(double LimitedValue, int countOfNumberAfterComa = 1)
         {
             int MultiplyAndDivide = 1;

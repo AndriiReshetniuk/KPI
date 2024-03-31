@@ -17,8 +17,8 @@ namespace Дослідження_операцій_ЛР__1
         private ChartGrapic1 graphic = new ChartGrapic1();
         private Function function;
         private double sizeOfTheIncrement;
-
-        public Table_of_iteration(Function function, double sizeOfTheIncrement = 0.1)
+        double x;
+        public Table_of_iteration(Function function, double sizeOfTheIncrement = 0.01)
         {
             InitializeComponent();
             CreateTable();
@@ -73,15 +73,35 @@ namespace Дослідження_операцій_ЛР__1
         }
         private void Table_of_iteration_Load(object sender, EventArgs e)
         {
-
+            x = Convert.ToDouble(Table1.Rows[Table1.RowCount - 2].Cells[3].Value);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             TableFieldsStorage.Rows = Table1.Rows;
             TableFieldsStorage.RowCount = Table1.RowCount;
-            graphic.DrawGraphic(this, function, sizeOfTheIncrement);
+            graphic.DrawGraphic(this, function, x, sizeOfTheIncrement);
+            graphic.WindowState = FormWindowState.Normal;
             graphic.Show();
+        }
+
+        private void Table1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int cellIndex = e.ColumnIndex;
+            if (cellIndex == 1 || cellIndex == 3)
+            {
+                int RowIndex = e.RowIndex;
+                DataGridViewRow selectedRow = Table1.Rows[RowIndex];
+                x = Convert.ToDouble(selectedRow.Cells[cellIndex].Value);
+                if (x == Math.Floor(x))
+                {
+                    sizeOfTheIncrement = 0.1;
+                }
+                else
+                {
+                    sizeOfTheIncrement = 0.001;
+                }
+            }
         }
     }
 }

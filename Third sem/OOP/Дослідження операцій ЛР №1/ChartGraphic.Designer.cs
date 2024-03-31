@@ -32,6 +32,8 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.graphic1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.graphic1)).BeginInit();
             this.SuspendLayout();
@@ -41,7 +43,6 @@
             chartArea1.Name = "ChartArea1";
             this.graphic1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            legend1.Title = "Графік Функції";
             this.graphic1.Legends.Add(legend1);
             this.graphic1.Location = new System.Drawing.Point(101, 3);
             this.graphic1.Name = "graphic1";
@@ -56,15 +57,26 @@
             this.graphic1.Size = new System.Drawing.Size(1138, 521);
             this.graphic1.TabIndex = 2;
             this.graphic1.Text = "chart1";
-            title1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            title1.Name = "X";
-            title1.Text = "X";
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title1.Name = "Title1";
+            title1.Text = "Графік Функції";
+            title2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title2.Name = "Title2";
+            title2.Text = "X";
+            title3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title3.Name = "Title3";
+            title3.Text = "Y";
             this.graphic1.Titles.Add(title1);
+            this.graphic1.Titles.Add(title2);
+            this.graphic1.Titles.Add(title3);
             // 
             // ChartGrapic1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1330, 511);
             this.Controls.Add(this.graphic1);
             this.Name = "ChartGrapic1";

@@ -42,6 +42,7 @@
             this.Table1.RowTemplate.Height = 24;
             this.Table1.Size = new System.Drawing.Size(1059, 403);
             this.Table1.TabIndex = 0;
+            this.Table1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Table1_CellClick);
             // 
             // buttonCreateGraphic
             // 
